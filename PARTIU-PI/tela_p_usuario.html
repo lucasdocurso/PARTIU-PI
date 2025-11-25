@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editar Perfil</title>
+    <link rel="stylesheet" href="tela_p_usuario.css" />
+    <link rel="stylesheet" href="tela_p_usuario.js">
+</head>
+<body>
+  <div class="card">
+
+    <div class="profile-pic-container">
+      <div style="position: relative;">
+        <img id="profilePreview" src="https://via.placeholder.com/150" class="profile-pic" />
+        <label class="camera-btn">
+          📷
+          <input type="file" id="photoInput" hidden />
+        </label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Alterar nome</label>
+      <input type="text" id="usernameInput" placeholder="Digite seu nome" />
+    </div>
+
+    <button class="btn btn-save">Salvar alterações</button>
+    <button class="btn btn-logout">Sair da conta</button>
+  </div>
+</body>
+</html>

@@ -7,8 +7,8 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(assets/img-homepage.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+ url(assets/login-cadastro.jpg) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     color: white;
@@ -59,9 +59,11 @@ main {
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     margin: auto;
+    max-width: 400px;
+    height: fit-content;
 }
 
 main h1 {
@@ -100,4 +102,26 @@ background: linear-gradient(90deg, rgba(10, 111, 181, 1) 0%, rgba(1, 46, 99, 1) 
 
 .texto-secundario a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    nav button {
+        padding: 8px 15px;
+        margin-left: 5px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
